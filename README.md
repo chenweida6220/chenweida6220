@@ -1,6 +1,17 @@
 <h1 align="center">Hi👋, I'm Wei (or William)</h1>
 <h3 align="center">Data-driven problem solver and IT auditor turning complex data into actionable insights.</h3>
 
+<!-- Dynamic shields.io badges -->
+<div align="center">
+  <!-- LinkedIn shields.io badge -->
+  <a href="http://linkedin.com/in/dawae"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  /> </a>
+  <!-- GitHub shields.io badge -->
+    <a href="https://github.com/chenweida6220"><img src="https://img.shields.io/static/v1?message=My%20GitHub%20Projects&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="25" alt="github logo" /> </a>
+  <!-- datascienceportofol.io shields.io badge -->
+  <a href="https://www.datascienceportfol.io/weidawdc">
+  <img src="https://img.shields.io/static/v1?message=DataSciencePortfol.io&logo=google-chrome&label=&color=0A66C2&logoColor=white&style=for-the-badge" height="25" alt="datascienceportfol.io logo" /> </a>
+</div>
+
 ### 🚀 About Me
 - 📈 Specializing in data analysis, visualization, and statistical modeling.
 - 💡 Passionate about uncovering patterns and trends in data.
