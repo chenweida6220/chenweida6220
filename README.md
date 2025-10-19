@@ -9,10 +9,8 @@
 <!-- LinkedIn shields.io badge -->
 <a href="http://linkedin.com/in/dawae"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo" /> </a><!-- GitHub shields.io badge --><a href="https://github.com/chenweida6220"><img src="https://img.shields.io/static/v1?message=My%20GitHub%20Projects&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="25" alt="github logo" /> </a><!-- datascienceportofol.io shields.io badge --><a href="https://www.datascienceportfol.io/weidawdc"><img src="https://img.shields.io/static/v1?message=DataSciencePortfol.io&logo=google-chrome&label=&color=0A66C2&logoColor=white&style=for-the-badge" height="25" alt="datascienceportfol.io logo" /> </a>
 
-<img width="aut src="dark-mode_namecard.svg" alt="dark mode namecard">
-
   <picture>
-    <img alt="light mode (default) namecard svg" src="dark-mode_namecard.svg">
+    <img alt="light mode (default) namecard svg" src="light-mode_namecard.svg">
     <source media="(prefers-color-scheme: dark)" srcset="dark-mode_namecard.svg">
   </picture>
 </div>
