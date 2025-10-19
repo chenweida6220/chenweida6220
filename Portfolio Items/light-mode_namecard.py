@@ -4,9 +4,9 @@ import svgwrite
 dwg = svgwrite.Drawing('light-mode_namecard.svg', size=('800px', '400px'))
 
 # Colors
-BG_COLOR = "#f4f4f4"
-TERMINAL_HEADER = '#e0f2e9'
-TEXT_COLOR = '#00ff88'
+BG_COLOR = "#ffffff"
+TERMINAL_HEADER = '#f0f0f0'
+TEXT_COLOR = '#111111'
 FONT = 'monospace'
 
 # --- Base terminal window ---
