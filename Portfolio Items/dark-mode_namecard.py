@@ -1,0 +1,97 @@
+import svgwrite
+
+# Output SVG file
+dwg = svgwrite.Drawing('dark-mode_namecard.svg', size=('800px', '400px'))
+
+# Colors
+BG_COLOR = '#1e1e1e'
+TERMINAL_HEADER = '#2b2b2b'
+TEXT_COLOR = '#00ff88'
+FONT = 'monospace'
+
+# --- Base terminal window ---
+dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR))
+
+# --- Top bar ---
+dwg.add(dwg.rect(insert=(0, 0), size=('100%', '20px'), fill=TERMINAL_HEADER))
+dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
+                 fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+
+# --- Add ASCII Image (left side) ---
+# Display the ASCII image (converted PNG)
+dwg.add(dwg.image(href='Portfolio Items/headshot-ascii-art.png',
+                  insert=(10, 22), size=("380px", '380px')))
+
+# --- About Me Section (right side) ---
+about_x = 400
+about_y = 80
+line_height = 28
+
+section_headers = [
+    ("User Information", "user_information"),
+    ("Specifalizations", "specializations")
+]
+
+user_information = [
+    ("Identity", "Wei Da Chen aka William"),
+    ("Coordinates", "Zone-NYC // N43.7920 W18.6543"),
+    ("Email", "weida.wdc@gmail.com"),
+    ("Last Login", "Sat Oct 12 17:32 EDT 2025"),
+]
+
+specializations = [
+    ("Focus", "Data Analysis"),
+    ("Expertise", "Risk Assessment, IT Auditing"),
+    ("Tools", "SQL, Python, Tableau, Git"),
+]
+
+# Function to format with dash leaders
+def dash_leader(left, right, width=40):
+    dots = '-' * (width - len(left) - len(right))
+    return f"{left}{dots}{right}"
+
+# Function to format with dot leaders
+def dot_leader(left, right, width=40):
+    dots = '.' * (width - len(left) - len(right))
+    return f"{left}{dots}{right}"
+
+# for i, (label, value) in enumerate(about_section):
+#     text = dot_leader(label, value, 50)
+#     dwg.add(dwg.text(text,
+#                      insert=(about_x, about_y + i * line_height),
+#                      fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+
+current_y = about_y  # Start vertical position
+
+for section_label, section_var in section_headers:
+    # Render section header with dashed leader
+    header_text = dash_leader(f"[ {section_label} ] ", "", 50)
+    dwg.add(dwg.text(header_text,
+                     insert=(about_x, current_y),
+                     fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+    current_y += line_height
+
+    # Get the actual section data (e.g., user_information)
+    section_data = globals().get(section_var, [])
+
+    # Render each key-value pair
+    for label, value in section_data:
+        text = dot_leader(label, value, 50)
+        dwg.add(dwg.text(text,
+                         insert=(about_x, current_y),
+                         fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+        current_y += line_height
+
+    # Add spacing after section
+    current_y += line_height
+
+
+# --- Optional terminal-style footer ---
+dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
+                 insert=(about_x, 380),
+                 fill="#00ffaa", font_size="13px", font_family=FONT))
+
+# --- Save SVG ---
+dwg.save()
+
+print("✅ SVG namecard generated: dark-mode_namecard.svg")
