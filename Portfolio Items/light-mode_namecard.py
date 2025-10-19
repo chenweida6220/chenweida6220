@@ -4,9 +4,9 @@ import svgwrite
 dwg = svgwrite.Drawing('light-mode_namecard.svg', size=('800px', '400px'))
 
 # Colors
-BG_COLOR = "#fefefe"
-TERMINAL_HEADER = '#e0e0e0'
-TEXT_COLOR = '#2e2e2e'
+BG_COLOR = "#f4f4f4"
+TERMINAL_HEADER = '#e0f2e9'
+TEXT_COLOR = '#00ff88'
 FONT = 'monospace'
 
 # --- Base terminal window ---
@@ -95,7 +95,7 @@ for section_label, section_var in section_headers:
 # Terminal-style footer ---
 dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
                  insert=(about_x, 380),
-                 fill="#2e2e2e", font_size="13px", font_family=FONT))
+                 fill=TEXT_COLOR, font_size="13px", font_family=FONT))
 
 # --- Save SVG ---
 dwg.save()
