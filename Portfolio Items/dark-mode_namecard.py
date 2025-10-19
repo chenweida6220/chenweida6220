@@ -21,26 +21,32 @@ dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
 # Display the ASCII image (converted PNG)
 # dwg.add(dwg.image(href='Portfolio Items/headshot-ascii-art.png',
 #                   insert=(10, 22), size=("380px", '380px')))
-dwg.add(dwg.image(href='https://github.com/chenweida6220/chenweida6220/blob/main/Portfolio%20Items/headshot-ascii-art.png?raw=true',
+
+# Replaced the above step with manually converting ASCII svg file to base64 because GitHub markdown can't display external images inside SVG for security reasons.
+# Read the base64 string from your text file
+with open('Portfolio Items/headshot-ascii-base64.txt', 'r') as f:
+    base64_string = ''.join(f.read().split())  # removes all whitespace/newlines
+# Prepend the required header for data URI
+data_uri = f"data:image/png;base64,{base64_string}"
+# Add the image to the SVG
+dwg.add(dwg.image(href=data_uri,
                   insert=(10, 22), size=("380px", '380px')))
 
 # --- About Me Section (right side) ---
 about_x = 400
-about_y = 80
+about_y = 45
 line_height = 28
 
 section_headers = [
     ("User Information", "user_information"),
-    ("Specifalizations", "specializations")
+    ("Specializations", "specializations")
 ]
-
 user_information = [
     ("Identity", "Wei Da Chen aka William"),
     ("Coordinates", "Zone-NYC // N43.7920 W18.6543"),
     ("Email", "weida.wdc@gmail.com"),
     ("Last Login", "Sat Oct 12 17:32 EDT 2025"),
 ]
-
 specializations = [
     ("Focus", "Data Analysis"),
     ("Expertise", "Risk Assessment, IT Auditing"),
@@ -51,7 +57,6 @@ specializations = [
 def dash_leader(left, right, width=40):
     dots = '-' * (width - len(left) - len(right))
     return f"{left}{dots}{right}"
-
 # Function to format with dot leaders
 def dot_leader(left, right, width=40):
     dots = '.' * (width - len(left) - len(right))
@@ -87,8 +92,7 @@ for section_label, section_var in section_headers:
     # Add spacing after section
     current_y += line_height
 
-
-# --- Optional terminal-style footer ---
+# Terminal-style footer ---
 dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
                  insert=(about_x, 380),
                  fill="#00ffaa", font_size="13px", font_family=FONT))
