@@ -19,7 +19,9 @@ dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
 
 # --- Add ASCII Image (left side) ---
 # Display the ASCII image (converted PNG)
-dwg.add(dwg.image(href='Portfolio Items/headshot-ascii-art.png',
+# dwg.add(dwg.image(href='Portfolio Items/headshot-ascii-art.png',
+#                   insert=(10, 22), size=("380px", '380px')))
+dwg.add(dwg.image(href='https://github.com/chenweida6220/chenweida6220/blob/main/Portfolio%20Items/headshot-ascii-art.png?raw=true',
                   insert=(10, 22), size=("380px", '380px')))
 
 # --- About Me Section (right side) ---
