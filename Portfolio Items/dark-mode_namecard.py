@@ -1,15 +1,20 @@
 import svgwrite
 
-# Output SVG file
-# dwg = svgwrite.Drawing(
-#     'dark-mode_namecard.svg', size=('800px', '400px'))
+SVG_WIDTH = 800
+SVG_HEIGHT = 400
+LEFT_PADDING = 20
+RIGHT_PADDING = 20
 
+# Output SVG file
 dwg = svgwrite.Drawing(
-    'dark-mode_namecard.svg',
-    size=('100%', '400px'),
-    viewBox=('0 0 800 400'),  
-    preserveAspectRatio='xMidYMid meet'
-)
+    'dark-mode_namecard.svg', size=('800px', '400px'))
+
+# dwg = svgwrite.Drawing(
+#     'dark-mode_namecard.svg',
+#     size=('100%', '400px'),
+#     viewBox=('0 0 860 400'),  
+#     preserveAspectRatio='xMidYMid meet'
+# )
 
 # Colors
 BG_COLOR = '#1e1e1e'
@@ -18,10 +23,16 @@ TEXT_COLOR = '#00ff88'
 FONT = 'monospace'
 
 # --- Base terminal window ---
-dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR))
+dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke="#00ff90", stroke_width=2))
 
 # --- Top bar ---
 dwg.add(dwg.rect(insert=(0, 0), size=('100%', '20px'), fill=TERMINAL_HEADER))
+dwg.add(dwg.text("🔴🟡🟢",
+                 insert=(800 - RIGHT_PADDING, 15),
+                 text_anchor="end",
+                 font_size="14px", font_family=FONT))
+
+# dwg.add(dwg.text("🔴🟡🟢", insert=('700px', 15)))  # mimic macOS dots
 dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
                  fill=TEXT_COLOR, font_size="14px", font_family=FONT))
 
@@ -65,7 +76,7 @@ def dash_leader(left, right, width=40):
     dots = '-' * (width - len(left) - len(right))
     return f"{left}{dots}{right}"
 # Function to format with dot leaders
-def dot_leader(left, right, width=40):
+def dot_leader(left, right, width):
     dots = '.' * (width - len(left) - len(right))
     return f"{left}{dots}{right}"
 
@@ -79,10 +90,14 @@ current_y = about_y  # Start vertical position
 
 for section_label, section_var in section_headers:
     # Render section header with dashed leader
-    header_text = dash_leader(f"[ {section_label} ] ", "", 50)
+    header_text = dash_leader(f"[ {section_label} ] ", "", 40)
     dwg.add(dwg.text(header_text,
                      insert=(about_x, current_y),
-                     fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+                     fill=TEXT_COLOR, font_size="14px", 
+                     font_family=FONT,
+                     textLength=SVG_WIDTH - about_x - RIGHT_PADDING,
+                     lengthAdjust="spacingAndGlyphs"
+                 ))
     current_y += line_height
 
     # Get the actual section data (e.g., user_information)
@@ -90,10 +105,13 @@ for section_label, section_var in section_headers:
 
     # Render each key-value pair
     for label, value in section_data:
-        text = dot_leader(label, value, 50)
+        text = dot_leader(label, value, 40)
         dwg.add(dwg.text(text,
                          insert=(about_x, current_y),
-                         fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+                         fill=TEXT_COLOR, font_size="14px", 
+                         font_family=FONT,
+                         textLength=SVG_WIDTH - about_x - RIGHT_PADDING,
+                         lengthAdjust="spacingAndGlyphs"))
         current_y += line_height
 
     # Add spacing after section
@@ -101,7 +119,7 @@ for section_label, section_var in section_headers:
 
 # Terminal-style footer ---
 dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
-                 insert=(about_x, '95%'),
+                 insert=(about_x, SVG_HEIGHT - 15),
                  fill="#00ffaa", font_size="13px", font_family=FONT))
 
 # --- Save SVG ---
