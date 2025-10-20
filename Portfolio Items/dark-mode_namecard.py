@@ -7,7 +7,7 @@ import svgwrite
 dwg = svgwrite.Drawing(
     'dark-mode_namecard.svg',
     size=('100%', '400px'),
-    viewBox=('0 0 880 400'),  # give ~10% extra horizontal space
+    viewBox=('0 0 800 400'),  
     preserveAspectRatio='xMidYMid meet'
 )
 
