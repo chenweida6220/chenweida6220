@@ -72,14 +72,7 @@ def dot_leader(left, right, width):
     dots = '.' * (width - len(left) - len(right))
     return f"{left}{dots}{right}"
 
-# for i, (label, value) in enumerate(about_section):
-#     text = dot_leader(label, value, 50)
-#     dwg.add(dwg.text(text,
-#                      insert=(about_x, about_y + i * line_height),
-#                      fill=TEXT_COLOR, font_size="14px", font_family=FONT))
-
 current_y = about_y  # Start vertical position
-
 for section_label, section_var in section_headers:
     # Render section header with dashed leader
     header_text = dash_leader(f"[ {section_label} ] ", "", 50)

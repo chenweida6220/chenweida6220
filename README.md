@@ -13,11 +13,6 @@
     <source media="(prefers-color-scheme: dark)" srcset="dark-mode_namecard.svg">
     <img alt="light mode (default) namecard svg" src="light-mode_namecard.svg">
   </picture>
-
-  <!-- <picture style="display: block; width: 100%;">
-    <source media="(prefers-color-scheme: dark)" srcset="dark-mode_namecard.svg">
-    <img alt="light mode (default) namecard svg" src="light-mode_namecard.svg" style="display: block; width: 100%;">
-  </picture> -->
 </div>
 
 ### 📚 My Projects
