@@ -6,11 +6,10 @@ import svgwrite
 
 dwg = svgwrite.Drawing(
     'dark-mode_namecard.svg',
-    size=('100%', '100%'),
-    viewBox='0 0 800 400',
+    size=('100%', '400px'),
+    viewBox=('0 0 880 400'),  # give ~10% extra horizontal space
     preserveAspectRatio='xMidYMid meet'
 )
-
 
 # Colors
 BG_COLOR = '#1e1e1e'
@@ -32,7 +31,6 @@ dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
 #                   insert=(10, 22), size=("380px", '380px')))
 
 # Replaced the above step with manually converting ASCII svg file to base64 because GitHub markdown can't display external images inside SVG for security reasons.
-# Read the base64 string from your text file
 with open('Portfolio Items/headshot-ascii-base64.txt', 'r') as f:
     base64_string = ''.join(f.read().split())  # removes all whitespace/newlines
 # Prepend the required header for data URI
@@ -103,7 +101,7 @@ for section_label, section_var in section_headers:
 
 # Terminal-style footer ---
 dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
-                 insert=(about_x, 380),
+                 insert=(about_x, '95%'),
                  fill="#00ffaa", font_size="13px", font_family=FONT))
 
 # --- Save SVG ---
