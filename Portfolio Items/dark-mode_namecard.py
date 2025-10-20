@@ -2,19 +2,13 @@ import svgwrite
 
 SVG_WIDTH = 800
 SVG_HEIGHT = 400
-LEFT_PADDING = 20
-RIGHT_PADDING = 20
+LEFT_PADDING = 10
+RIGHT_PADDING = 10
+outline = 2
 
 # Output SVG file
 dwg = svgwrite.Drawing(
     'dark-mode_namecard.svg', size=('800px', '400px'))
-
-# dwg = svgwrite.Drawing(
-#     'dark-mode_namecard.svg',
-#     size=('100%', '400px'),
-#     viewBox=('0 0 860 400'),  
-#     preserveAspectRatio='xMidYMid meet'
-# )
 
 # Colors
 BG_COLOR = '#1e1e1e'
@@ -23,17 +17,15 @@ TEXT_COLOR = '#00ff88'
 FONT = 'monospace'
 
 # --- Base terminal window ---
-dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke="#00ff90", stroke_width=2))
+dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke="#00ff90", stroke_width=outline))
 
 # --- Top bar ---
-dwg.add(dwg.rect(insert=(0, 0), size=('100%', '20px'), fill=TERMINAL_HEADER))
+dwg.add(dwg.rect(insert=(outline, outline), size=(SVG_WIDTH - outline, '20px'), rx=8, ry=8,fill=TERMINAL_HEADER))
 dwg.add(dwg.text("🔴🟡🟢",
                  insert=(800 - RIGHT_PADDING, 15),
                  text_anchor="end",
                  font_size="14px", font_family=FONT))
-
-# dwg.add(dwg.text("🔴🟡🟢", insert=('700px', 15)))  # mimic macOS dots
-dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
+dwg.add(dwg.text("chenweida6220@github: ~", insert=(LEFT_PADDING, 15),
                  fill=TEXT_COLOR, font_size="14px", font_family=FONT))
 
 # --- Add ASCII Image (left side) ---
@@ -48,7 +40,7 @@ with open('Portfolio Items/headshot-ascii-base64.txt', 'r') as f:
 data_uri = f"data:image/png;base64,{base64_string}"
 # Add the image to the SVG
 dwg.add(dwg.image(href=data_uri,
-                  insert=(10, 22), size=("380px", '380px')))
+                  insert=(LEFT_PADDING, 22), size=("380px", '380px')))
 
 # --- About Me Section (right side) ---
 about_x = 400
