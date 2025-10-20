@@ -17,7 +17,7 @@ TEXT_COLOR = '#00ff88'
 FONT = 'monospace'
 
 # --- Base terminal window ---
-dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke="#00ff90", stroke_width=outline))
+dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke=TEXT_COLOR, stroke_width=outline))
 
 # --- Top bar ---
 dwg.add(dwg.rect(insert=(outline, outline), size=(SVG_WIDTH - outline, '20px'), rx=8, ry=8,fill=TERMINAL_HEADER))
@@ -82,7 +82,7 @@ current_y = about_y  # Start vertical position
 
 for section_label, section_var in section_headers:
     # Render section header with dashed leader
-    header_text = dash_leader(f"[ {section_label} ] ", "", 40)
+    header_text = dash_leader(f"[ {section_label} ] ", "", 50)
     dwg.add(dwg.text(header_text,
                      insert=(about_x, current_y),
                      fill=TEXT_COLOR, font_size="14px", 
@@ -97,7 +97,7 @@ for section_label, section_var in section_headers:
 
     # Render each key-value pair
     for label, value in section_data:
-        text = dot_leader(label, value, 40)
+        text = dot_leader(label, value, 50)
         dwg.add(dwg.text(text,
                          insert=(about_x, current_y),
                          fill=TEXT_COLOR, font_size="14px", 
@@ -112,7 +112,7 @@ for section_label, section_var in section_headers:
 # Terminal-style footer ---
 dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
                  insert=(about_x, SVG_HEIGHT - 15),
-                 fill="#00ffaa", font_size="13px", font_family=FONT))
+                 fill=TEXT_COLOR, font_size="13px", font_family=FONT))
 
 # --- Save SVG ---
 dwg.save()

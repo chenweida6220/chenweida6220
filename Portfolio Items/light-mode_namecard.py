@@ -1,7 +1,14 @@
 import svgwrite
 
+SVG_WIDTH = 800
+SVG_HEIGHT = 400
+LEFT_PADDING = 10
+RIGHT_PADDING = 10
+outline = 2
+
 # Output SVG file
-dwg = svgwrite.Drawing('light-mode_namecard.svg', size=('800px', '400px'))
+dwg = svgwrite.Drawing(
+    'light-mode_namecard.svg', size=('800px', '400px'))
 
 # Colors
 BG_COLOR = "#ffffff"
@@ -10,11 +17,15 @@ TEXT_COLOR = '#111111'
 FONT = 'monospace'
 
 # --- Base terminal window ---
-dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR))
+dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke=TEXT_COLOR, stroke_width=outline))
 
 # --- Top bar ---
-dwg.add(dwg.rect(insert=(0, 0), size=('100%', '20px'), fill=TERMINAL_HEADER))
-dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
+dwg.add(dwg.rect(insert=(outline, outline), size=(SVG_WIDTH - outline, '20px'), rx=8, ry=8,fill=TERMINAL_HEADER))
+dwg.add(dwg.text("🔴🟡🟢",
+                 insert=(800 - RIGHT_PADDING, 15),
+                 text_anchor="end",
+                 font_size="14px", font_family=FONT))
+dwg.add(dwg.text("chenweida6220@github: ~", insert=(LEFT_PADDING, 15),
                  fill=TEXT_COLOR, font_size="14px", font_family=FONT))
 
 # --- Add ASCII Image (left side) ---
@@ -23,14 +34,13 @@ dwg.add(dwg.text("chenweida6220@github: ~", insert=(10, 15),
 #                   insert=(10, 22), size=("380px", '380px')))
 
 # Replaced the above step with manually converting ASCII svg file to base64 because GitHub markdown can't display external images inside SVG for security reasons.
-# Read the base64 string from your text file
 with open('Portfolio Items/headshot-ascii-base64.txt', 'r') as f:
     base64_string = ''.join(f.read().split())  # removes all whitespace/newlines
 # Prepend the required header for data URI
 data_uri = f"data:image/png;base64,{base64_string}"
 # Add the image to the SVG
 dwg.add(dwg.image(href=data_uri,
-                  insert=(10, 22), size=("380px", '380px')))
+                  insert=(LEFT_PADDING, 22), size=("380px", '380px')))
 
 # --- About Me Section (right side) ---
 about_x = 400
@@ -58,7 +68,7 @@ def dash_leader(left, right, width=40):
     dots = '-' * (width - len(left) - len(right))
     return f"{left}{dots}{right}"
 # Function to format with dot leaders
-def dot_leader(left, right, width=40):
+def dot_leader(left, right, width):
     dots = '.' * (width - len(left) - len(right))
     return f"{left}{dots}{right}"
 
@@ -75,7 +85,11 @@ for section_label, section_var in section_headers:
     header_text = dash_leader(f"[ {section_label} ] ", "", 50)
     dwg.add(dwg.text(header_text,
                      insert=(about_x, current_y),
-                     fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+                     fill=TEXT_COLOR, font_size="14px", 
+                     font_family=FONT,
+                     textLength=SVG_WIDTH - about_x - RIGHT_PADDING,
+                     lengthAdjust="spacingAndGlyphs"
+                 ))
     current_y += line_height
 
     # Get the actual section data (e.g., user_information)
@@ -86,7 +100,10 @@ for section_label, section_var in section_headers:
         text = dot_leader(label, value, 50)
         dwg.add(dwg.text(text,
                          insert=(about_x, current_y),
-                         fill=TEXT_COLOR, font_size="14px", font_family=FONT))
+                         fill=TEXT_COLOR, font_size="14px", 
+                         font_family=FONT,
+                         textLength=SVG_WIDTH - about_x - RIGHT_PADDING,
+                         lengthAdjust="spacingAndGlyphs"))
         current_y += line_height
 
     # Add spacing after section
@@ -94,7 +111,7 @@ for section_label, section_var in section_headers:
 
 # Terminal-style footer ---
 dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
-                 insert=(about_x, 380),
+                 insert=(about_x, SVG_HEIGHT - 15),
                  fill=TEXT_COLOR, font_size="13px", font_family=FONT))
 
 # --- Save SVG ---
