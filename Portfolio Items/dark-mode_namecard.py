@@ -55,7 +55,7 @@ user_information = [
     ("Identity", "Wei Da Chen aka William"),
     ("Coordinates", "Zone-NYC // N43.7920 W18.6543"),
     ("Email", "weida.wdc@gmail.com"),
-    ("Last Login", "Sat Oct 12 17:32 EDT 2025"),
+    ("Last Login", "Fri Oct 24 17:32 EDT 2025"),
 ]
 specializations = [
     ("Focus", "Data Analysis"),
