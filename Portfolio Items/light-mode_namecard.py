@@ -42,6 +42,17 @@ data_uri = f"data:image/png;base64,{base64_string}"
 dwg.add(dwg.image(href=data_uri,
                   insert=(LEFT_PADDING, 22), size=("380px", '380px')))
 
+# Automatic timestamp
+AUTO_UPDATE = True
+
+if AUTO_UPDATE:
+    from datetime import datetime
+    import pytz
+    nyc_tz = pytz.timezone("America/New_York")
+    LAST_LOGIN = datetime.now(nyc_tz).strftime("%a %b %d %H:%M %Z %Y")
+else:
+    LAST_LOGIN = "Fri Oct 24 17:32 EDT 2025"
+
 # --- About Me Section (right side) ---
 about_x = 400
 about_y = 45
@@ -55,7 +66,7 @@ user_information = [
     ("Identity", "Wei Da Chen aka William"),
     ("Coordinates", "Zone-NYC // N43.7920 W18.6543"),
     ("Email", "weida.wdc@gmail.com"),
-    ("Last Login", "Fri Oct 24 17:32 EDT 2025"),
+    ("Last Login", LAST_LOGIN),
 ]
 specializations = [
     ("Focus", "Data Analysis"),
