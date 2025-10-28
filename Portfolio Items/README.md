@@ -1,17 +1,18 @@
-# 🗺 Wei's Data Science Portfolio
+# 🗺 Wei's Portfolio
 
 Welcome to my data portfolio! Here, I document a summary of my projects in the data field. 
 
 ## 📚 Table of Contents
 - [Tableau](#tableau)
 - [Python](#python)
+- [Miscellaneous – Computer Science Projects](#miscellaneous--computer-science-projects)
 <!-- - [SQL](#sql) -->
 <!-- - [Power BI](#tableau) -->
 <!-- - [Data Engineering](#data-engineering) -->
 
 # Tableau
 
-| Project Link | Project Description | Deliverable Link |
+| Project Link | Project Description | Deliverable |
 |---|---|---| 
 | 🎬 [Netflix Movies & TV Shows](https://github.com/chenweida6220/Netflix-Movies-TV-Shows-Analysis) | Analyzed and visualized Netflix’s global catalog (2021–2025) using Excel and Tableau to uncover trends in content growth, ratings, and genre dominance, revealing a tenfold increase in titles since 2008 and key insights into audience preferences and platform strategy. | [Tableau Dashboard (Data till 2021)](https://public.tableau.com/app/profile/wei.da.chen/viz/NetflixMoviesTVShowsTill2021/Netflix), [Tableau Dashboard (Data till 2025)](https://public.tableau.com/app/profile/wei.da.chen/viz/NetflixMoviesTVShowsTill2025/Netflix) |
 | 💉 [Diabetes Risk](https://github.com/chenweida6220/diabetes-risk-visualization) | Analyzed 441K+ BRFSS survey responses using Excel and Tableau to identify key diabetes risk factors, revealing strong links between BMI, blood pressure, and prevalence while highlighting education as a protective factor. | [Slide Presentation](https://github.com/chenweida6220/diabetes-risk-visualization/blob/main/COOP%20Diabetes%20Data%20Visualization%20Project.pdf), [Project Report](https://github.com/chenweida6220/diabetes-risk-visualization/blob/main/Visualizing%20Diabetes%20Risk%20-%20An%20Analysis%20of%20CDC%E2%80%99s%202015%20BRFSS%20Data.pdf) |
@@ -25,6 +26,14 @@ Welcome to my data portfolio! Here, I document a summary of my projects in the d
 |---|---|---|---|
 [WORK IN PROGRESS, THANKS]
 <!-- | 👩🏻‍💻 [CS50P - Ongoing](https://github.com/katiehuangx/CS50P/blob/main/README.md) | Programming | This repo contains the solution to the problem sets in [Harvardx CS50P Introduction to Programming with Python](https://www.edx.org/course/cs50s-introduction-to-programming-with-python). | - |  -->
+
+***
+
+# Miscellaneous – Computer Science Projects
+
+| Project Link | Programming Language | Project Description | Deliverable |
+|---|---|---|---|
+| 🐊 [CUNY Zoo](https://github.com/chenweida6220/WebDevelopmentAssignment1) | HTML, CSS | Designed and built CUNY ZOOS, a four-zoo themed website representing CUNY colleges, featuring a homepage with site-wide navigation and individual landing pages for each zoo containing detailed animal profiles, images, and educational content. | [Website](https://tommyliang1.github.io/WebDevelopmentAssignment1/) |
 
 ***
 
