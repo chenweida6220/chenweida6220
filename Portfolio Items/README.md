@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 # 🗺 Wei's Portfolio
 
 Welcome to my data portfolio! Here, I document a summary of my projects in the data field. 
@@ -33,9 +35,13 @@ Welcome to my data portfolio! Here, I document a summary of my projects in the d
 
 | Project Link | Programming Language | Project Description | Deliverable |
 |---|---|---|---|
+| ✍️ [Writevibe](https://github.com/chenweida6220/csci-49900-writevibe?tab=readme-ov-file#readme-top) | HTML, CSS, JS | Designed and developed WriteVibe, a customizable writing application built to enhance focus and engagement for neurodivergent users, particularly individuals with ADHD, by offering adaptive stimuli and rich text formatting features. | - | - |
+| 🚔 [Emergency 911 Chatbot](https://github.com/chenweida6220/2021-Hunter-Codefest_Emergency911Chatbot) | HTML, CSS, JS | Developed Emergency911Chatbot, a proof-of-concept prototype designed to handle non-emergency and silent emergency situations, reducing unnecessary 911 calls by providing users with automated guidance and alternative reporting options. | - | - |
 | 🐊 [CUNY Zoo](https://github.com/chenweida6220/WebDevelopmentAssignment1) | HTML, CSS | Designed and built CUNY ZOOS, a four-zoo themed website representing CUNY colleges, featuring a homepage with site-wide navigation and individual landing pages for each zoo containing detailed animal profiles, images, and educational content. | [Website](https://tommyliang1.github.io/WebDevelopmentAssignment1/) |
 
 ***
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- # Data Engineering
 
