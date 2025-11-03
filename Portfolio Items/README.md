@@ -21,6 +21,9 @@ Welcome to my data portfolio! Here, I document a summary of my projects in the d
 | 🩸💉 [Diabetes Risk](https://github.com/chenweida6220/diabetes-risk-visualization) | Interpreted 441K+ BRFSS survey responses using Excel and Tableau to identify key diabetes risk factors, revealing strong links between BMI, blood pressure, and prevalence while highlighting education as a protective factor. | [Slide Presentation](https://github.com/chenweida6220/diabetes-risk-visualization/blob/main/COOP%20Diabetes%20Data%20Visualization%20Project.pdf), [Project Report](https://github.com/chenweida6220/diabetes-risk-visualization/blob/main/Visualizing%20Diabetes%20Risk%20-%20An%20Analysis%20of%20CDC%E2%80%99s%202015%20BRFSS%20Data.pdf) |
 | 📡 [Telecoms Campaign Optimization](https://github.com/chenweida6220/telecoms-campaign-optimization-analysis) | Studied 1,000+ telecom campaign records using Excel and Tableau to uncover spatial and audience performance patterns, revealing 20+ anomalies and 10+ low-performing states that improved targeting by 15% and contributed to a projected 20% ROI increase. | [Slide Presentation](https://github.com/chenweida6220/telecoms-campaign-optimization-analysis/blob/main/COOP%20Data%20Analyst%20-%20Capstone.pdf), [Project Report](https://github.com/chenweida6220/telecoms-campaign-optimization-analysis/blob/main/COOP%20Capstone%20Project%20-%20One%20Pager.pdf) |
 
+<!-- Teleports to top -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ***
 
 # Python
@@ -29,6 +32,9 @@ Welcome to my data portfolio! Here, I document a summary of my projects in the d
 |---|---|---|---|
 [WORK IN PROGRESS, THANKS]
 <!-- | 👩🏻‍💻 [CS50P - Ongoing](https://github.com/katiehuangx/CS50P/blob/main/README.md) | Programming | This repo contains the solution to the problem sets in [Harvardx CS50P Introduction to Programming with Python](https://www.edx.org/course/cs50s-introduction-to-programming-with-python). | - |  -->
+
+<!-- Teleports to top -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ***
 
@@ -44,9 +50,10 @@ Welcome to my data portfolio! Here, I document a summary of my projects in the d
 | 🎨 [TechArt](https://github.com/chenweida6220/TechArt-Website) | HTML, CSS | Built a responsive web project (TechArt-Website) demonstrating the fusion of art and technology concepts through structured HTML, styled layouts, and Bootstrap components. | -  | - |
 | ⭕❌ [Tic-Tac-Toe](https://github.com/chenweida6220/Java_Tic-Tac-Toe) | Java | Implemented a barebones Java Tic-Tac-Toe game in Java using a 2D array for the board, input validation, turn management, and win/draw detection. | -  | - |
 
-***
-
+<!-- Teleports to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+***
 
 <!-- # Data Engineering
 
