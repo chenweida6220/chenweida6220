@@ -33,6 +33,9 @@ dwg.add(dwg.text("chenweida6220@github: ~",
                  font_family=FONT))
 
 #------------------------------------------------------------------------------------------+
+# Examples of ASCII Art Generators:
+# https://promptcache.com/tools/ascii-art-generator
+
 # --- Add ASCII Image (left side) ---
 # Display the ASCII image (converted PNG)
 # dwg.add(dwg.image(href='Portfolio Items/headshot-ascii-art.png',
@@ -40,7 +43,7 @@ dwg.add(dwg.text("chenweida6220@github: ~",
 
 # Replaced the above step with converting ASCII svg file to base64 because GitHub markdown can't display external images inside SVG for security reasons.
 # Encode ASCII image to base64
-image_path = "Portfolio Items/headshot-ascii-art.png"  
+image_path = "Portfolio Items/dark-mode_headshot-ascii-art.png"  
 with open(image_path, "rb") as image_file:
     image_data = image_file.read()
     encoded_image_bytes = base64.b64encode(image_data)
