@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
 
 # 🗺 Wei's Portfolio
-
-Welcome to my data portfolio! Here, I document a summary of my projects in the data field. 
+Welcome to my data portfolio! Explore my work in data and beyond.
 
 ## 📚 Table of Contents
 - [Tableau](#tableau)
@@ -13,7 +12,6 @@ Welcome to my data portfolio! Here, I document a summary of my projects in the d
 <!-- - [Data Engineering](#data-engineering) -->
 
 # Tableau
-
 | Project Link | Project Description | Deliverable |
 |---|---|---| 
 | 📦⤵️ [Amazon Prime Movies & TV Shows](https://github.com/chenweida6220/Amazon-Prime-Movies-TV-Shows-Analysis) | Analyzed Amazon Prime Video’s global catalog of movies and TV shows (up to 2021) to identify trends in content distribution, audience ratings, and genre diversity, uncovering insights into the platform’s film dominance and strategic growth in original series. | [Dashboard](https://public.tableau.com/app/profile/dawae/viz/AmazonPrimeMoviesTVShowsTill2021/amazonprimemoviesdashboard) |
