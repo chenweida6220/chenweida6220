@@ -20,7 +20,7 @@ FONT = 'monospace'
 dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill=BG_COLOR, rx=8, ry=8,stroke=TEXT_COLOR, stroke_width=outline))
 
 # --- Top bar ---
-dwg.add(dwg.rect(insert=(outline, outline), size=(SVG_WIDTH - outline, '20px'), rx=8, ry=8,fill=TERMINAL_HEADER))
+dwg.add(dwg.rect(insert=(outline, outline), size=(SVG_WIDTH - outline - 1, '20px'), rx=8, ry=8,fill=TERMINAL_HEADER))
 dwg.add(dwg.text("🔴🟡🟢",
                  insert=(800 - RIGHT_PADDING, 15),
                  text_anchor="end",
