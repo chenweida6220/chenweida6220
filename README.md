@@ -22,7 +22,7 @@ Welcome to my portfolio, where I showcase my [projects](/Portfolio%20Items/READM
 ```
 > loading ego_core.dll...
 > initializing self.exe...
-> "The self is not discovered; it is declared."
+> "Insanity is doing the same thing over and over again and expecting different results."
 > operation complete.
 ```
 
