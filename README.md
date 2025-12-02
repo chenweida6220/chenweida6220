@@ -16,7 +16,7 @@
 </div>
 
 ### 📚 My Projects
-Welcome to my portfolio, where I showcase my [projects](/Portfolio%20Items/README.md).
+Welcome to my portfolio, where I showcase my [`< PROJECTS />`](/Portfolio%20Items/README.md).
 
 ### Self Doctrine
 ```

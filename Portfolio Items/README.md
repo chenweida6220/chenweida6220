@@ -22,19 +22,28 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 | 💸💰 [Personal Finance/Banking](https://github.com/chenweida6220/Personal-Finance-Dashboard) | Developed a personal banking dashboard that synthesized 160+ transactions to reveal key financial trends, including a major shift from gig economy to salaried income and the impact of unplanned household expenses on cash flow. | [Dashboard](https://public.tableau.com/app/profile/dawae/viz/PersonalBankingDashboard_17621936168810/PersonalBankingDashboard) |
 
 
-<!-- Teleports to top -->
+<!-- Directs to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ***
 
 # Python
+| Project Link | Project Description | Deliverable |
+|---|---|---| 
+| 🧑‍🎓💊 [Student Mental Health Analysis](https://github.com/chenweida6220/Student-Mental-Health-Analysis) | Built a depression prediction model using Python that achieved 66% precision by applying data curation, feature engineering, and decision tree algorithms to synthetic student mental health data. | [Dashboard](https://github.com/chenweida6220/Student-Mental-Health-Analysis/blob/main/Student%20Mental%20Health%20Analysis/Student%20Mental%20Health%20Analysis%20Presentation.pdf)
 
+<!-- Directs to top -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+***
+
+# R
 | Project Link | Area | Project Description | Libraries |    
 |---|---|---|---|
 [WORK IN PROGRESS, THANKS]
 <!-- | 👩🏻‍💻 [CS50P - Ongoing](https://github.com/katiehuangx/CS50P/blob/main/README.md) | Programming | This repo contains the solution to the problem sets in [Harvardx CS50P Introduction to Programming with Python](https://www.edx.org/course/cs50s-introduction-to-programming-with-python). | - |  -->
 
-<!-- Teleports to top -->
+<!-- Directs to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ***
@@ -52,7 +61,7 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 | 💻🎨 [TechArt](https://github.com/chenweida6220/TechArt-Website) | Built a responsive web project (TechArt-Website) demonstrating the fusion of art and technology concepts through structured HTML, styled layouts, and Bootstrap components. | 
 | ⭕❌ [Tic-Tac-Toe](https://github.com/chenweida6220/Java_Tic-Tac-Toe) | Implemented a barebones Java Tic-Tac-Toe game in Java using a 2D array for the board, input validation, turn management, and win/draw detection. | 
 
-<!-- Teleports to top -->
+<!-- Directs to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ***
