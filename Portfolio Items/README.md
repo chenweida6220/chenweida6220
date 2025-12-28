@@ -27,6 +27,16 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 
 ***
 
+# Miicrosoft Power BI
+| Project Link | Project Description | Deliverable |
+|---|---|---| 
+| 🧑‍🎓💊 [Healthcare Analytics](https://github.com/chenweida6220/Healthcare-Analytics-Dashboard) | Developed an interactive, multi-page Power BI dashboard to analyze the financial performance and operational efficiency of a healthcare center using a synthetic relational dataset spanning patients, providers, visits, and billing. | - |
+
+<!-- Directs to top -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+***
+
 # Python
 | Project Link | Project Description | Deliverable |
 |---|---|---| 
@@ -56,10 +66,10 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 | 🚔 [Emergency 911 Chatbot](https://github.com/chenweida6220/2021-Hunter-Codefest_Emergency911Chatbot) | Developed Emergency911Chatbot, a proof-of-concept prototype designed to handle non-emergency and silent emergency situations, reducing unnecessary 911 calls by providing users with automated guidance and alternative reporting options. | - |
 | 🏫🐊 [CUNY Zoo](https://github.com/chenweida6220/WebDevelopmentAssignment1) | Designed and built CUNY ZOOS, a four-zoo themed website representing CUNY colleges, featuring a homepage with site-wide navigation and individual landing pages for each zoo containing detailed animal profiles, images, and educational content. | [Website](https://tommyliang1.github.io/WebDevelopmentAssignment1/) |
 | 🐍📝 [Google Form Phishing Site](https://github.com/chenweida6220/GoogleFormPhishingSite?tab=readme-ov-file) | Built a responsive, client-side form prototype inspired by Google Forms; implemented required-field validation, audio feedback, and animated GIF overlays on Submit/Exit — entirely front-end with no data retention. | [Website](https://chenweida6220.github.io/GoogleFormPhishingSite/) | 
-| 🐦‍🔥⚡ [Kanto Pokemons](https://github.com/chenweida6220/CSS-Pokemon-Project) | Built a responsive webpage displaying four Pokémon banners, implementing CSS shadow and positioning techniques to enhance visual depth and design consistency. | 
+| 🐦‍🔥⚡ [Kanto Pokemons](https://github.com/chenweida6220/CSS-Pokemon-Project) | Built a responsive webpage displaying four Pokémon banners, implementing CSS shadow and positioning techniques to enhance visual depth and design consistency. | - |
 | 🌅🏢 [Travelers 'R' Us](https://github.com/chenweida6220/Travelers-R-U-Travel-App) | Executed a full human-centered design process for "Travelers 'R' U": developed user personas and problem statements, structured information architecture via card sorting, designed wireframes and a prototype in Figma, and validated designs through usability testing. | [Wireframe](https://www.figma.com/design/RsglBJYgGNcA1s2zBnY9eo/Travelers%22R%22U), [Demo](https://www.figma.com/proto/RsglBJYgGNcA1s2zBnY9eo/Travelers) |
-| 💻🎨 [TechArt](https://github.com/chenweida6220/TechArt-Website) | Built a responsive web project (TechArt-Website) demonstrating the fusion of art and technology concepts through structured HTML, styled layouts, and Bootstrap components. | 
-| ⭕❌ [Tic-Tac-Toe](https://github.com/chenweida6220/Java_Tic-Tac-Toe) | Implemented a barebones Java Tic-Tac-Toe game in Java using a 2D array for the board, input validation, turn management, and win/draw detection. | 
+| 💻🎨 [TechArt](https://github.com/chenweida6220/TechArt-Website) | Built a responsive web project (TechArt-Website) demonstrating the fusion of art and technology concepts through structured HTML, styled layouts, and Bootstrap components. | - |
+| ⭕❌ [Tic-Tac-Toe](https://github.com/chenweida6220/Java_Tic-Tac-Toe) | Implemented a barebones Java Tic-Tac-Toe game in Java using a 2D array for the board, input validation, turn management, and win/draw detection. | - |
 
 <!-- Directs to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
