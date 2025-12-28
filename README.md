@@ -24,7 +24,7 @@
 ### 📚 My Projects
 Welcome to my portfolio, where I showcase my [`< PROJECTS />`](/Portfolio%20Items/README.md).
 
-### Self Doctrine
+### 🖥️ Self Doctrine
 ```
 > loading ego_core.dll...
 > initializing self.exe...
