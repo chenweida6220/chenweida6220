@@ -29,7 +29,7 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 
 ***
 
-# Miicrosoft Power BI
+# Microsoft Power BI
 | Project Link | Project Description | Deliverable |
 |---|---|---| 
 | 🏥📊 [Healthcare Analytics](https://github.com/chenweida6220/Healthcare-Analytics-Dashboard) | Developed an interactive, multi-page Power BI dashboard to analyze the financial performance and operational efficiency of a healthcare center using a synthetic relational dataset spanning patients, providers, visits, and billing. | - |
