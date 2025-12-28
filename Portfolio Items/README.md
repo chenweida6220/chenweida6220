@@ -1,3 +1,5 @@
+<!-- https://emojicombos.com/amazon-prime -->
+
 <a name="readme-top"></a>
 
 # 🗺 Wei's Portfolio
@@ -5,10 +7,10 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 
 ## 📚 Table of Contents
 - [Tableau](#tableau)
+- [Microsoft Power BI](#microsoft-power-bi)
 - [Python](#python)
 - [Miscellaneous – Computer Science Projects](#miscellaneous--computer-science-projects)
 <!-- - [SQL](#sql) -->
-<!-- - [Power BI](#tableau) -->
 <!-- - [Data Engineering](#data-engineering) -->
 
 # Tableau
