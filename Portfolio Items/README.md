@@ -32,7 +32,8 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 # Microsoft Power BI
 | Project Link | Project Description | Deliverable |
 |---|---|---| 
-| 🏥📊 [Healthcare Analytics](https://github.com/chenweida6220/Healthcare-Analytics-Dashboard) | Developed an interactive, multi-page Power BI dashboard to analyze the financial performance and operational efficiency of a healthcare center using a synthetic relational dataset spanning patients, providers, visits, and billing. | - |
+| 🚬🫁 [Smoking Risk](https://github.com/chenweida6220/SmokeHealth-Analytics#) | Built a healthcare risk analytics dashboard in Power BI from ingestion to visualization, utilizing Power Query for ETL and DAX for calculated measures (e.g., comparative age/BMI KPIs). | - |
+| 🏥📊 [Healthcare](https://github.com/chenweida6220/Healthcare-Analytics-Dashboard) | Developed an interactive, multi-page Power BI dashboard to analyze the financial performance and operational efficiency of a healthcare center using a synthetic relational dataset spanning patients, providers, visits, and billing. | - |
 
 <!-- Directs to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
