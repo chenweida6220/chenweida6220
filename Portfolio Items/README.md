@@ -10,6 +10,7 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 - [Microsoft Power BI](#microsoft-power-bi)
 - [Python](#python)
 - [Miscellaneous – Computer Science Projects](#miscellaneous--computer-science-projects)
+<!-- - [R](#r) -->
 <!-- - [SQL](#sql) -->
 <!-- - [Data Engineering](#data-engineering) -->
 
