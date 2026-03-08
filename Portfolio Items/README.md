@@ -8,15 +8,15 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 ## 📚 Table of Contents
 - [Tableau](#tableau)
 - [Microsoft Power BI](#microsoft-power-bi)
+- [SQL](#sql)
 - [Python](#python)
 - [Miscellaneous – Computer Science Projects](#miscellaneous--computer-science-projects)
 <!-- - [R](#r) -->
-<!-- - [SQL](#sql) -->
 <!-- - [Data Engineering](#data-engineering) -->
 
 # Tableau
 | Project Link | Project Description | Deliverable |
-|---|---|---| 
+| :----------- | ------------------- | :---------- | 
 | 📦⤵️ [Amazon Prime Movies & TV Shows](https://github.com/chenweida6220/Amazon-Prime-Movies-TV-Shows-Analysis) | Analyzed Amazon Prime Video’s global catalog of movies and TV shows (up to 2021) to identify trends in content distribution, audience ratings, and genre diversity, uncovering insights into the platform’s film dominance and strategic growth in original series. | [Dashboard](https://public.tableau.com/app/profile/dawae/viz/AmazonPrimeMoviesTVShowsTill2021/amazonprimemoviesdashboard) |
 | 🎬🍿 [Netflix Movies & TV Shows](https://github.com/chenweida6220/Netflix-Movies-TV-Shows-Analysis) | Examined and visualized Netflix’s global catalog (2021–2025) to uncover trends in content growth, ratings, and genre dominance, revealing a tenfold increase in titles since 2008 and key insights into audience preferences and platform strategy. | [Dashboard 1 - Data till 2021](https://public.tableau.com/app/profile/wei.da.chen/viz/NetflixMoviesTVShowsTill2021/Netflix), [Dashboard 2 - Data till 2025](https://public.tableau.com/app/profile/wei.da.chen/viz/NetflixMoviesTVShowsTill2025/Netflix) |
 | 📡 [Telecoms Campaign Optimization](https://github.com/chenweida6220/telecoms-campaign-optimization-analysis) | Studied 1,000+ telecom campaign records to uncover spatial and audience performance patterns, revealing 20+ anomalies and 10+ low-performing states that improved targeting by 15% and contributed to a projected 20% ROI increase. | [Presentation](https://github.com/chenweida6220/telecoms-campaign-optimization-analysis/blob/main/COOP%20Data%20Analyst%20-%20Capstone.pdf), [Project Report](https://github.com/chenweida6220/telecoms-campaign-optimization-analysis/blob/main/COOP%20Capstone%20Project%20-%20One%20Pager.pdf) |
@@ -32,7 +32,7 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 
 # Microsoft Power BI
 | Project Link | Project Description | Deliverable |
-|---|---|---| 
+| :----------- | ------------------- | :---------- | 
 | 🚬🫁 [Smoking Risk](https://github.com/chenweida6220/SmokeHealth-Analytics#) | Built a healthcare risk analytics dashboard in Power BI from ingestion to visualization, utilizing Power Query for ETL and DAX for calculated measures (e.g., comparative age/BMI KPIs). | - |
 | 🏥📊 [Healthcare](https://github.com/chenweida6220/Healthcare-Analytics-Dashboard) | Developed an interactive, multi-page Power BI dashboard to analyze the financial performance and operational efficiency of a healthcare center using a synthetic relational dataset spanning patients, providers, visits, and billing. | - |
 
@@ -41,9 +41,19 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 
 ***
 
+# SQL
+| Project Link | Project Description | Deliverable |
+| :----------- | ------------------- | :---------- | 
+| 🏪🛒 [Retail Sales](https://github.com/chenweida6220/retail-sales-analysis) | Designed and implemented a MySQL database from raw CSV transaction data, performing end-to-end data cleaning, exploratory analysis, and optimization to analyze 2,000 retail transactions across three product categories. | - |
+
+<!-- Directs to top -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+***
+
 # Python
 | Project Link | Project Description | Deliverable |
-|---|---|---| 
+| :----------- | ------------------- | :---------- | 
 | 🧑‍🎓💊 [Student Mental Health Analysis](https://github.com/chenweida6220/Student-Mental-Health-Analysis) | Built a depression prediction model using Python that achieved 66% precision by applying data curation, feature engineering, and decision tree algorithms to synthetic student mental health data. | [Presentation](https://github.com/chenweida6220/Student-Mental-Health-Analysis/blob/main/Student%20Mental%20Health%20Analysis/Student%20Mental%20Health%20Analysis%20Presentation.pdf) |
 
 <!-- Directs to top -->
@@ -65,7 +75,7 @@ Welcome to my data portfolio! Explore my work in data and beyond.
 # Miscellaneous – Computer Science Projects
 
 | Project Link | Project Description | Deliverable |
-|---|---|---|
+| :----------- | ------------------- | ----------: |
 | ✍️ [Writevibe](https://github.com/chenweida6220/csci-49900-writevibe?tab=readme-ov-file#readme-top) | Designed and developed WriteVibe, a customizable writing application built to enhance focus and engagement for neurodivergent users, particularly individuals with ADHD, by offering adaptive stimuli and rich text formatting features. | - |
 | 🚔 [Emergency 911 Chatbot](https://github.com/chenweida6220/2021-Hunter-Codefest_Emergency911Chatbot) | Developed Emergency911Chatbot, a proof-of-concept prototype designed to handle non-emergency and silent emergency situations, reducing unnecessary 911 calls by providing users with automated guidance and alternative reporting options. | - |
 | 🏫🐊 [CUNY Zoo](https://github.com/chenweida6220/WebDevelopmentAssignment1) | Designed and built CUNY ZOOS, a four-zoo themed website representing CUNY colleges, featuring a homepage with site-wide navigation and individual landing pages for each zoo containing detailed animal profiles, images, and educational content. | [Website](https://tommyliang1.github.io/WebDevelopmentAssignment1/) |
