@@ -89,7 +89,7 @@ user_information = [
 specializations = [
     ("Focus", "Data Analysis"),
     ("Expertise", "Risk Assessment, IT Auditing"),
-    ("Tools", "SQL, Python, Tableau, Git"),
+    ("Tools", "Tableau, MS Power BI, SQL, Python, Git"),
 ]
 
 # Function to format with dash leaders
