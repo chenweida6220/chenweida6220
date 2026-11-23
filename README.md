@@ -1,7 +1,7 @@
 <div align="center">
   <img height="150" src="/Portfolio Items/github-profile gif.gif"  />
   <br>
-  <img src="/Portfolio Items/github-typewriter generator gif.gif"  />
+  <img src="/Portfolio Items/intro_typewriter-gif.gif"  />
 
   <h3>Data-driven problem solver and IT auditor turning complex data into actionable insights.</h3>
 

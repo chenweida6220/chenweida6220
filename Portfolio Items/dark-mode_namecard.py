@@ -81,7 +81,7 @@ section_headers = [
     ("Specializations", "specializations")
 ]
 user_information = [
-    ("Identity", "Wei Da Chen aka William"),
+    ("Identity", "Wei Chen"),
     ("Coordinates", "Zone-NYC // N43.7920 W18.6543"),
     ("Email", "weida.wdc@gmail.com"),
     ("Last Login", LAST_LOGIN),
@@ -140,7 +140,57 @@ dwg.add(dwg.text("$ echo 'Welcome to my GitHub! :)'",
                  font_size="13px", 
                  font_family=FONT))
 
-# --- Save SVG ---
-dwg.save()
+#------------------------------------------------------------------------------------------+
+# Building laser
+# --- Laser settings ---
+LASER_COLOR = "#22C55E"      # main green
+LASER_CORE  = "#86EFAC"      # lighter green for the bright center
+LASER_SPEED = "3s"             # time for one sweep
+TRAIL_HEIGHT = 70
 
+# 1. Clip path matching the card shape (same size/radius as the base rect)
+clip = dwg.defs.add(dwg.clipPath(id="cardClip"))
+clip.add(dwg.rect(insert=(0, 0), size=(SVG_WIDTH, SVG_HEIGHT), rx=8, ry=8))
+
+# 2a. Laser line gradient: transparent -> bright -> transparent (left to right)
+line_grad = dwg.linearGradient(start=(0, 0), end=(1, 0), id="laserLine")
+line_grad.add_stop_color(0.0, LASER_COLOR, opacity=0)
+line_grad.add_stop_color(0.5, LASER_CORE,  opacity=1)
+line_grad.add_stop_color(1.0, LASER_COLOR, opacity=0)
+dwg.defs.add(line_grad)
+
+# 2b. Trail gradient: transparent at top -> faint green at the laser line
+trail_grad = dwg.linearGradient(start=(0, 0), end=(0, 1), id="laserTrail")
+trail_grad.add_stop_color(0.0, LASER_COLOR, opacity=0)
+trail_grad.add_stop_color(1.0, LASER_COLOR, opacity=0.25)
+dwg.defs.add(trail_grad)
+
+# 3. Glow: blur filter, with an enlarged region so the thin line isn't cut off
+glow = dwg.defs.add(dwg.filter(id="laserGlow", x="-5%", y="-500%",
+                               width="110%", height="1100%"))
+glow.feGaussianBlur(in_="SourceGraphic", stdDeviation=3)
+
+# 4. The laser group, clipped to the card and animated
+clipped = dwg.add(dwg.g(clip_path="url(#cardClip)"))
+laser = clipped.add(dwg.g(class_="laser"))
+
+laser.add(dwg.rect(insert=(0, 0), size=(SVG_WIDTH, TRAIL_HEIGHT),
+                   fill="url(#laserTrail)"))                      # trail
+laser.add(dwg.rect(insert=(0, TRAIL_HEIGHT - 1), size=(SVG_WIDTH, 3),
+                   fill="url(#laserLine)", filter="url(#laserGlow)"))  # glow
+laser.add(dwg.rect(insert=(0, TRAIL_HEIGHT), size=(SVG_WIDTH, 1.5),
+                   fill="url(#laserLine)"))                       # sharp core
+
+# Slide from just above the card (-TRAIL_HEIGHT) to just below it (SVG_HEIGHT)
+dwg.defs.add(dwg.style(f"""
+.laser {{ animation: sweep {LASER_SPEED} linear infinite; }}
+@keyframes sweep {{
+  0%   {{ transform: translateY({-TRAIL_HEIGHT}px); }}
+  70%  {{ transform: translateY({SVG_HEIGHT}px); }}
+  100% {{ transform: translateY({SVG_HEIGHT}px); }}
+}}
+"""))
+#------------------------------------------------------------------------------------------+
+
+dwg.save()
 print("✅ SVG namecard generated: dark-mode_namecard.svg")
