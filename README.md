@@ -3,7 +3,7 @@
   <br>
   <img src="/Portfolio Items/intro_typewriter-gif.gif"  />
 
-  <h3>Data-driven problem solver and IT auditor turning complex data into actionable insights.</h3>
+  <h3>Internal Auditor by profession, problem-solver by nature, driven by data, business insight, and risk intelligence.</h3>
 
 [![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on%20LinkedIn-0A66C2?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzYtLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NiAyLjM3IDQuMjY2IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2EyLjA2MiAyLjA2MiAwIDEgMSAwLTQuMTI1IDIuMDYyIDIuMDYyIDAgMCAxIDAgNC4xMjV6TTYuODEzIDIwLjQ1MkgzLjg2VjloMi45NTN2MTEuNDUyeiIvPjwvc3ZnPg==&logoColor=white&style=for-the-badge
 )](https://www.linkedin.com/in/dawae/)
