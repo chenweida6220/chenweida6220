@@ -1,0 +1,38 @@
+name: Rotate namecard theme
+
+on:
+  schedule:
+    - cron: "0 0,12 * * *"   # 00:00 and 12:00 UTC
+  workflow_dispatch:          # lets you run it manually
+
+permissions:
+  contents: write
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install svgwrite pytz
+      - name: Generate both cards
+        run: |
+          python "Portfolio Items/light-mode_namecard.py"
+          python "Portfolio Items/dark-mode_namecard.py"
+      - name: Pick theme by hour
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" -lt 12 ]; then
+            cp dark-mode_namecard.svg namecard.svg
+          else
+            cp light-mode_namecard.svg namecard.svg
+          fi
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add namecard.svg
+          git diff --cached --quiet || git commit -m "Rotate namecard theme"
+          git push

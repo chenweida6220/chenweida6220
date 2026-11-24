@@ -15,10 +15,13 @@
 <!-- GitHub shields.io badge -->
 <!-- <a href="/Portfolio Items/README.md"><img src="https://img.shields.io/static/v1?message=My%20GitHub%20Projects&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="30" alt="github logo" /> </a> -->
 
-  <picture>
+  <!-- Replacing the theme switch based on user's theme setting with a GitHub Action as a clock -->
+  <!-- <picture>
     <source media="(prefers-color-scheme: dark)" srcset="dark-mode_namecard.svg">
     <img alt="light mode (default) namecard svg" src="light-mode_namecard.svg">
-  </picture>
+  </picture> -->
+
+  <img src="namecard.svg" alt="Name card">
 </div>
 
 ### 📚 My Projects
