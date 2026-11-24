@@ -2,7 +2,7 @@ name: Rotate namecard theme
 
 on:
   schedule:
-    - cron: "0 0,12 * * *"   # 00:00 and 12:00 UTC
+    - cron: "0 4,5,14,15 * * *"   # 00:00 and 12:00 UTC
   workflow_dispatch:          # lets you run it manually
 
 permissions:
@@ -21,13 +21,13 @@ jobs:
         run: |
           python "Portfolio Items/light-mode_namecard.py"
           python "Portfolio Items/dark-mode_namecard.py"
-      - name: Pick theme by hour
+      - name: Pick theme by New York time
         run: |
-          HOUR=$(date -u +%H)
-          if [ "$HOUR" -lt 12 ]; then
-            cp dark-mode_namecard.svg namecard.svg
-          else
+          HOUR=$(TZ=America/New_York date +%H)
+          if [ "$HOUR" -lt 10 ]; then
             cp light-mode_namecard.svg namecard.svg
+          else
+            cp dark-mode_namecard.svg namecard.svg
           fi
       - name: Commit
         run: |
